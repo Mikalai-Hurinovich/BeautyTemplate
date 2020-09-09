@@ -1,0 +1,22 @@
+header.header 
+    nav.header__top
+        input.navbar__swicher#navbar_toggle(type="checkbox")
+        label(for="navbar_toggle").nav__toggle
+        ul.navbar
+            each item in ['Доставка', 'Оплата', 'Отзывы', 'Вопрос - ответ', 'Контакты']
+                li.navbar__item
+                    a.navbar__link(href="#")= item
+
+.header__middle
+    a.logo(href="#")
+        img(src="img/icons/symbol.jpg", alt="")
+    .header__action
+        input.header__input(type="search" placeholder="" )
+        a.header__phone(href="tel:8 (812) 123-45-67") 8 (812) 123-45-67
+        button.button Обратный звонок
+
+nav.header__bottom
+    ul.navbar.navbar_bottom
+        each item in ['Парикмахерская', 'Барбершоп', 'Маникюр', 'Педикюр', 'Массаж', 'Мебель']
+            li.navbar__item
+                a.navbar__link(href="#")= item    
